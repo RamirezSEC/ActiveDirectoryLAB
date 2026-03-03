@@ -6,37 +6,56 @@ This lab demonstrates the deployment and management of a Windows Active Director
 The environment was built using Oracle VirtualBox and simulates common administrative and security tasks performed by system administrators and SOC analysts.
 <br />
 
-
-<h2>Languages and Utilities Used</h2>
+<h2>Languages</h2>
 
 - <b>PowerShell</b> 
-- <b>Diskpart</b>
 
-<h2>Environments Used </h2>
+<h2>Virtualization Enviornment</h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>VirtualBox</b>
+
+<h2>Operating Systems</h2>
+
+- <b>2019 Windows Server (Domain Controller)</b>
+- <b>Windows 10 (Domain Client)</b>
+
+<h2>Directory & Infrastructure Services</h2>
+
+- <b>Active Directory Domain Services (AD DS)</b>
+- <b>DNS</b>
+- <b>DHCP</b>
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Download VirtualBox: <br/>
+<img src="https://i.imgur.com/TZQP6vz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Download VirtualBox Extention Pack:  <br/>
+<img src="https://i.imgur.com/8JSyXeX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Download Windows Server2019 ISO: <br/>
+<img src="https://i.imgur.com/d2la4h6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Download Windows 10 ISO:  <br/>
+<img src="https://i.imgur.com/lkeF0E1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Follow these steps to create ISO file (Make sure to select "ISO file" & save to desktop or somewhere you wont forget):  <br/>
+<img src="https://i.imgur.com/3UTXHcO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Open VirtualBox and click New:  <br/>
+<img src="https://i.imgur.com/2oSIdLE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Use these settings to setup Windows Server VM:  <br/>
+<img src="https://i.imgur.com/RYBxoE1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SvgNCNH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Ts8iBUM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Sanitization complete:  <br/>
@@ -46,6 +65,7 @@ Sanitization complete:  <br/>
 Observe the wiped disk:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
 
 <!--
  ```diff
