@@ -1,7 +1,7 @@
 <h1>Active Directory Home Lab</h1>
 
 <h2>Description</h2>
-This lab demonstrates the deployment and management of a Windows Active Directory Domain Services (AD DS) environment in a virtualized lab. The goal of this lab was to gain hands-on experience with identity and access management (IAM), Windows domain infrastructure, and basic security monitoring in an enterprise-style setup.
+This lab demonstrates the deployment and management of a Windows Active Directory Domain Services (AD DS) environment in a virtualized Lab. The goal of this lab was to gain hands-on experience with identity and access management (IAM), Windows domain infrastructure, and basic security monitoring in an enterprise-style setup.
 
 The environment was built using Oracle VirtualBox and simulates common administrative and security tasks performed by system administrators and SOC analysts.
 <br />
@@ -52,18 +52,49 @@ Open VirtualBox and click New:  <br/>
 <img src="https://i.imgur.com/2oSIdLE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Use these settings to setup Windows Server VM:  <br/>
+Use these settings to setup Windows Server VM / Select Finish:  <br/>
 <img src="https://i.imgur.com/RYBxoE1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/SvgNCNH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/Ts8iBUM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+Right click the VM you just created (DC) and click settings: 
+
+ - Make sure you are on the Expert tab> General> Click on Features
+ - Set both the Shared Clipboard & Drag and Drop to "Bidirectional"  <br/>
+<img src="https://i.imgur.com/d13qgiV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<p align="center">
+Under Settings go to Network and click Adapter 1: 
+
+- Check the box to Enable Network Adapter
+- Set the Attached to option to "NAT"  <br/>
+<img src="https://i.imgur.com/JA9s4b5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+Select Adapter 2:
+
+- Check the box to Enable Network Adapter
+- Set the Attached option to "Internal Network"
+- Press OK.  <br/>
+<img src="https://i.imgur.com/m4sf1ra.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Under Settings go to Network and click Adapter 1: <br/>
+<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Confirm your selection:  <br/>
+<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Wait for process to complete (may take some time):  <br/>
+<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 Sanitization complete:  <br/>
 <img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 
